@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data=1// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data=// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S_61',children:[{name:'sentence_list_60',children:[{name:'sentence_59',children:[{name:'for_sentence_58',children:[{name:'state_57',children:[{name:'sentence_56',children:[{name:';_55',children:[]}, {name:'expression_54',children:[{name:'expression_0_53',children:[{name:'expression_1_52',children:[{name:'expression_2_51',children:[{name:'NUM_50',children:[]}, ]}, {name:'symble_1_49',children:[{name:'+_48',children:[]}, ]}, {name:'expression_1_47',children:[{name:'expression_2_46',children:[{name:'id_45',children:[]}, ]}, ]}, ]}, {name:'symble_0_44',children:[{name:'=_43',children:[]}, ]}, {name:'expression_0_42',children:[{name:'expression_1_41',children:[{name:'expression_2_40',children:[{name:'id_39',children:[]}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')_38',children:[]}, {name:'iter_37',children:[{name:'expression_36',children:[{name:'expression_single_35',children:[{name:'symble_single_34',children:[{name:'++_33',children:[]}, ]}, {name:'expression_32',children:[{name:'expression_0_31',children:[{name:'expression_1_30',children:[{name:'expression_2_29',children:[{name:'id_28',children:[]}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_27',children:[]}, {name:'end_expression_26',children:[{name:'expression_25',children:[{name:'expression_0_24',children:[{name:'expression_1_23',children:[{name:'expression_2_22',children:[{name:'NUM_21',children:[]}, ]}, {name:'symble_1_20',children:[{name:'<_19',children:[]}, ]}, {name:'expression_1_18',children:[{name:'expression_2_17',children:[{name:'id_16',children:[]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_15',children:[]}, {name:'initial_14',children:[{name:'expression_13',children:[{name:'expression_0_12',children:[{name:'expression_1_11',children:[{name:'expression_2_10',children:[{name:'NUM_9',children:[]}, ]}, ]}, {name:'symble_0_8',children:[{name:'=_7',children:[]}, ]}, {name:'expression_0_6',children:[{name:'expression_1_5',children:[{name:'expression_2_4',children:[{name:'id_3',children:[]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'(_2',children:[]}, {name:'for_1',children:[]}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S -> sentence_list_61',children:[{name:'sentence_list -> e__60',children:[{name:'sentence -> for_sentence_59',children:[{name:'for_sentence -> for ( initial ; end_expression ; iter ) state_58',children:[{name:'state -> sentence_57',children:[{name:'sentence -> expression ;_56',children:[{name:';_55'}, {name:'expression -> expression_0_54',children:[{name:'expression_0 -> expression_0 symble_0 expression_1_53',children:[{name:'expression_1 -> expression_1 symble_1 expression_2_52',children:[{name:'expression_2 -> NUM_51',children:[{name:'NUM_50'}, ]}, {name:'symble_1 -> +_49',children:[{name:'+_48'}, ]}, {name:'expression_1 -> expression_2_47',children:[{name:'expression_2 -> id_46',children:[{name:'id_45'}, ]}, ]}, ]}, {name:'symble_0 -> =_44',children:[{name:'=_43'}, ]}, {name:'expression_0 -> expression_1_42',children:[{name:'expression_1 -> expression_2_41',children:[{name:'expression_2 -> id_40',children:[{name:'id_39'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')_38'}, {name:'iter -> expression_37',children:[{name:'expression -> expression_single_36',children:[{name:'expression_single -> expression symble_single_35',children:[{name:'symble_single -> ++_34',children:[{name:'++_33'}, ]}, {name:'expression -> expression_0_32',children:[{name:'expression_0 -> expression_1_31',children:[{name:'expression_1 -> expression_2_30',children:[{name:'expression_2 -> id_29',children:[{name:'id_28'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_27'}, {name:'end_expression -> expression_26',children:[{name:'expression -> expression_0_25',children:[{name:'expression_0 -> expression_1_24',children:[{name:'expression_1 -> expression_1 symble_1 expression_2_23',children:[{name:'expression_2 -> NUM_22',children:[{name:'NUM_21'}, ]}, {name:'symble_1 -> <_20',children:[{name:'<_19'}, ]}, {name:'expression_1 -> expression_2_18',children:[{name:'expression_2 -> id_17',children:[{name:'id_16'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_15'}, {name:'initial -> expression_14',children:[{name:'expression -> expression_0_13',children:[{name:'expression_0 -> expression_0 symble_0 expression_1_12',children:[{name:'expression_1 -> expression_2_11',children:[{name:'expression_2 -> NUM_10',children:[{name:'NUM_9'}, ]}, ]}, {name:'symble_0 -> =_8',children:[{name:'=_7'}, ]}, {name:'expression_0 -> expression_1_6',children:[{name:'expression_1 -> expression_2_5',children:[{name:'expression_2 -> id_4',children:[{name:'id_3'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'(_2'}, {name:'for_1'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S -> sentence_list_61',children:[{name:'sentence_list -> e__60',children:[{name:'sentence -> for_sentence_59',children:[{name:'for_sentence -> for ( initial ; end_expression ; iter ) state_58',children:[{name:'state -> sentence_57',children:[{name:'sentence -> expression ;_56',children:[{name:';_55'}, {name:'expression -> expression_0_54',children:[{name:'expression_0 -> expression_0 symble_0 expression_1_53',children:[{name:'expression_1 -> expression_1 symble_1 expression_2_52',children:[{name:'expression_2 -> NUM_51',children:[{name:'NUM_50'}, ]}, {name:'symble_1 -> +_49',children:[{name:'+_48'}, ]}, {name:'expression_1 -> expression_2_47',children:[{name:'expression_2 -> id_46',children:[{name:'id_45'}, ]}, ]}, ]}, {name:'symble_0 -> =_44',children:[{name:'=_43'}, ]}, {name:'expression_0 -> expression_1_42',children:[{name:'expression_1 -> expression_2_41',children:[{name:'expression_2 -> id_40',children:[{name:'id_39'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')_38'}, {name:'iter -> expression_37',children:[{name:'expression -> expression_single_36',children:[{name:'expression_single -> expression symble_single_35',children:[{name:'symble_single -> ++_34',children:[{name:'++_33'}, ]}, {name:'expression -> expression_0_32',children:[{name:'expression_0 -> expression_1_31',children:[{name:'expression_1 -> expression_2_30',children:[{name:'expression_2 -> id_29',children:[{name:'id_28'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_27'}, {name:'end_expression -> expression_26',children:[{name:'expression -> expression_0_25',children:[{name:'expression_0 -> expression_1_24',children:[{name:'expression_1 -> expression_1 symble_1 expression_2_23',children:[{name:'expression_2 -> NUM_22',children:[{name:'NUM_21'}, ]}, {name:'symble_1 -> <_20',children:[{name:'<_19'}, ]}, {name:'expression_1 -> expression_2_18',children:[{name:'expression_2 -> id_17',children:[{name:'id_16'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_15'}, {name:'initial -> expression_14',children:[{name:'expression -> expression_0_13',children:[{name:'expression_0 -> expression_0 symble_0 expression_1_12',children:[{name:'expression_1 -> expression_2_11',children:[{name:'expression_2 -> NUM_10',children:[{name:'NUM_9'}, ]}, ]}, {name:'symble_0 -> =_8',children:[{name:'=_7'}, ]}, {name:'expression_0 -> expression_1_6',children:[{name:'expression_1 -> expression_2_5',children:[{name:'expression_2 -> id_4',children:[{name:'id_3'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'(_2'}, {name:'for_1'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S -> sentence_list_61',children:[{name:'sentence_list -> e__60',children:[{name:'sentence -> for_sentence_59',children:[{name:'for_sentence -> for ( initial ; end_expression ; iter ) state_58',children:[{name:'state -> sentence_57',children:[{name:'sentence -> expression ;_56',children:[{name:';_55'}, {name:'expression -> expression_0_54',children:[{name:'expression_0 -> expression_0 symble_0 expression_1_53',children:[{name:'expression_1 -> expression_1 symble_1 expression_2_52',children:[{name:'expression_2 -> NUM_51',children:[{name:'NUM_50'}, ]}, {name:'symble_1 -> +_49',children:[{name:'+_48'}, ]}, {name:'expression_1 -> expression_2_47',children:[{name:'expression_2 -> id_46',children:[{name:'id_45'}, ]}, ]}, ]}, {name:'symble_0 -> =_44',children:[{name:'=_43'}, ]}, {name:'expression_0 -> expression_1_42',children:[{name:'expression_1 -> expression_2_41',children:[{name:'expression_2 -> id_40',children:[{name:'id_39'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')_38'}, {name:'iter -> expression_37',children:[{name:'expression -> expression_single_36',children:[{name:'expression_single -> expression symble_single_35',children:[{name:'symble_single -> ++_34',children:[{name:'++_33'}, ]}, {name:'expression -> expression_0_32',children:[{name:'expression_0 -> expression_1_31',children:[{name:'expression_1 -> expression_2_30',children:[{name:'expression_2 -> id_29',children:[{name:'id_28'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_27'}, {name:'end_expression -> expression_26',children:[{name:'expression -> expression_0_25',children:[{name:'expression_0 -> expression_1_24',children:[{name:'expression_1 -> expression_1 symble_1 expression_2_23',children:[{name:'expression_2 -> NUM_22',children:[{name:'NUM_21'}, ]}, {name:'symble_1 -> <_20',children:[{name:'<_19'}, ]}, {name:'expression_1 -> expression_2_18',children:[{name:'expression_2 -> id_17',children:[{name:'id_16'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';_15'}, {name:'initial -> expression_14',children:[{name:'expression -> expression_0_13',children:[{name:'expression_0 -> expression_0 symble_0 expression_1_12',children:[{name:'expression_1 -> expression_2_11',children:[{name:'expression_2 -> NUM_10',children:[{name:'NUM_9'}, ]}, ]}, {name:'symble_0 -> =_8',children:[{name:'=_7'}, ]}, {name:'expression_0 -> expression_1_6',children:[{name:'expression_1 -> expression_2_5',children:[{name:'expression_2 -> id_4',children:[{name:'id_3'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'(_2'}, {name:'for_1'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'right',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'left',
+              verticalAlign: 'middle',
+              align: 'right'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          top: '1%',
+          left: '15%',
+          bottom: '1%',
+          right: '7%',
+          symbolSize: 7,
+          orient: 'RL',
+          label: {
+            position: 'top',
+            verticalAlign: 'middle',
+            align: 'left'
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          emphasis: {
+            focus: 'descendant'
+          },
+          expandAndCollapse: true,
+          animationDuration: 550,
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: -90,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: -90,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: -90,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 1920px;height:1080px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'S',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'Start',children:[{name:'sentence_list',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'}'}, {name:'sentence_list',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'=='}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'>'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:'{'}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, {name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'}'}, {name:'sentence_list',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'{'}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'>'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'Start',children:[{name:'Word',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element',children:[{name:'LETTER',children:[{name:'t'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'n'}, ]}, ]}, ]}, {name:'LETTER',children:[{name:'i'}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'Start',children:[{name:'Word',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element',children:[{name:'LETTER',children:[{name:'t'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'n'}, ]}, ]}, ]}, {name:'LETTER',children:[{name:'i'}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:''}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:''}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'Start',children:[{name:'Declare',children:[{name:';'}, {name:'Word',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element_List',children:[{name:'Element',children:[{name:'NUM',children:[{name:'1'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'_'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'o'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'l'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'l'}, ]}, ]}, ]}, {name:'Element',children:[{name:'LETTER',children:[{name:'e'}, ]}, ]}, ]}, {name:'LETTER',children:[{name:'H'}, ]}, ]}, {name:'INT',children:[{name:''}, {name:''}, {name:'t'}, {name:'n'}, {name:'i'}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'t'}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'t'}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'t'}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'Start',children:[{name:'sentence_list',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'}'}, {name:'sentence_list',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'=='}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'>'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:'{'}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, {name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'}'}, {name:'sentence_list',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'{'}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'>'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 2560px;height:1440px;"></div>
+<script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+// 生成数据
+var data={name:'Start',children:[{name:'sentence_list',children:[{name:'sentence_list',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'}'}, {name:'sentence_list',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'for_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'=='}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'>'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:'{'}, ]}, {name:')'}, {name:'iter',children:[{name:'expression',children:[{name:'expression_single',children:[{name:'symble_single',children:[{name:'++'}, ]}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'end_expression',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:';'}, {name:'initial',children:[{name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'for'}, ]}, ]}, ]}, {name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'sentence',children:[{name:'if_sentence',children:[{name:'state',children:[{name:'}'}, {name:'sentence_list',children:[{name:'sentence',children:[{name:';'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'+'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, {name:'symble_0',children:[{name:'='}, ]}, {name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, ]}, ]}, {name:'{'}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, {name:'symble_1',children:[{name:'<'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, {name:')'}, {name:'expression',children:[{name:'expression_0',children:[{name:'expression_1',children:[{name:'expression_2',children:[{name:'NUM'}, ]}, {name:'symble_1',children:[{name:'>'}, ]}, {name:'expression_1',children:[{name:'expression_2',children:[{name:'id'}, ]}, ]}, ]}, ]}, ]}, {name:'('}, {name:'if'}, ]}, ]}, ]}, ]}// 结束生成数据
+myChart.showLoading();
+myChart.hideLoading();
+  data.children.forEach(function (datum, index) {
+    index % 2 === 0 && (datum.collapsed = true);
+  });
+  myChart.setOption(
+    (option = {
+      tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+      },
+      series: [
+        {
+          type: 'tree',
+          data: [data],
+          left: '2%',
+          right: '2%',
+          top: '8%',
+          bottom: '20%',
+          symbol: 'emptyCircle',
+          orient: 'vertical',
+          expandAndCollapse: true,
+          label: {
+            position: 'top',
+            rotate: 0,
+            verticalAlign: 'middle',
+            align: 'right',
+            fontSize: 9
+          },
+          leaves: {
+            label: {
+              position: 'bottom',
+              rotate: 0,
+              verticalAlign: 'middle',
+              align: 'left'
+            }
+          },
+          animationDurationUpdate: 750
+        }
+      ]
+    })
+  );
+option && myChart.setOption(option);
+</script>
+</body>
+</html>

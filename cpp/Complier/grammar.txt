@@ -1,0 +1,34 @@
+Start_ -> Start
+Start -> sentence_list
+state -> { sentence_list }
+state -> sentence
+sentence_list -> sentence sentence_list
+sentence_list -> e_
+sentence -> if_sentence
+sentence -> for_sentence
+sentence -> expression ;
+if_sentence -> if ( expression ) state
+expression -> expression_0
+expression -> expression_single
+expression_0 -> expression_0 symble_0 expression_1
+expression_0 -> expression_1
+symble_0 -> =
+expression_1 -> expression_1 symble_1 expression_2
+expression_1 -> expression_2
+symble_1 -> *
+symble_1 -> /
+symble_1 -> +
+symble_1 -> -
+symble_1 -> >
+symble_1 -> <
+symble_1 -> ==
+expression_2 -> ( expression )
+expression_2 -> id
+expression_2 -> NUM
+expression_single -> expression symble_single
+symble_single -> ++
+symble_single -> --
+for_sentence -> for ( initial ; end_expression ; iter ) state
+initial -> expression
+end_expression -> expression
+iter -> expression
